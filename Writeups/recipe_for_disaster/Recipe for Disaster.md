@@ -51,4 +51,4 @@ typedef struct {
 ```
 As one can see the `note` array lies above the `price` variable, and in the main function the value of `note` is assigned using the unsafe function `gets()`. Thus one can overflow from `note` to `price`.
 To make the price negative we rely on that fact that the prices are added, if we can make the price of each item enormous  adding them all up might cross the integer overflow limit and solve the challenge, thus i attempted this by giving the program 36 `Z` characters each time, choosing any items, this results in the following output giving the flag(redacted).
-![[Selection_1157.png]]
+![Flag](Selection_1157.png)
