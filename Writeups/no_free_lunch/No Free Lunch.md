@@ -23,6 +23,6 @@ EOF
 ```
 
 The solution on running looks like this, the flag is obviously redacted
-![[Selection_1158.png]]
+![Selection_1158.png](Selection_1158.png)
 
 PS: This does not seem to be the intended solution, however it works fine!
