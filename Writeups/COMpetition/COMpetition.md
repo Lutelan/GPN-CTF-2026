@@ -4,7 +4,7 @@ _This week's special: A chance to compete against our esteemed guest, the rock-p
 __Category__: Cryptography
 
 ### Solution Process
-The source code of the program is available to us this is the main code which determines if we win against the machine
+The source code of the program is available to us, thus we can see what determines whether we win against the machine.
 ```
     print("I want to play a game...")
     already_seen = {}
