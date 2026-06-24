@@ -59,7 +59,7 @@ def verify(commitment: bytes, message: bytes, unveil_info: tuple[bytes, bytes]) 
 
     return commitment == sha256(r1 + message + r2).digest()
 ```
-Looking at this we can see that what the function seems to do is take the two hex inputs we give it from the Proof prompt and then adds them before and after our choice in the game and checks if the commitment hex we gave it earlier matches the hash of this. Immediately one might think to solve this one needs to somehow brute-force a pre-image for the `sha256` algorithm to reverse what input one might need, but not only is that impossible, it is also not a practical!
+Looking at this we can see that what the function seems to do is take the two hex inputs we give it from the Proof prompt and then adds them as the prefix and the suffix of our choice in the game and checks if the commitment hex we gave it earlier matches the hash of this. Immediately one might think to solve this one needs to somehow brute-force a pre-image for the `sha256` algorithm to reverse what input one might need, but not only is that impossible, it is also not a practical!
 
 But what we can do is somehow make sure that the `r1 + message + r2` thing is just right so that it always hashes to whatever `commitement` is, their might be other ways to do this, but i chose the following method.
 
