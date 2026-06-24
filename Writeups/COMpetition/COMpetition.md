@@ -110,6 +110,6 @@ for i in range(1,101):
 
 print(p.recvall().decode())
 ```
-Running this program gives us the flag, (output is below, flags is redacted)
+Running this program gives us the flag, (output is below, flag is redacted)
 ![Selection_1161.png](Selection_1161.png)
 
