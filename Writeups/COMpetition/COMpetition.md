@@ -36,7 +36,7 @@ The source code of the program is available to us, thus we can see what determin
         already_seen[com] = your_choice
     print(f"How can that be? Well, a deal is a deal. Here is your flag: {environ['FLAG']}")
 ```
-Now one can see that obviously to beat the machine we must actually beat it in rock, paper, scissors which is not a hard task as it tells us its choice before it asks us for our's however to keep the loop going and not exit out one must also satisfy the following condition
+Now one can obviously see that to beat the machine we must actually beat it in rock, paper, scissors which is not a hard task as it tells us its choice before it asks us for our's, however to keep the loop going and not exit out one must also satisfy the following condition:
 ```
 if not verify(com, your_choice.encode("ascii"), unveil_info):
             print("Hey, no cheating! Do that again and I will eat all your flags")
